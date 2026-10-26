@@ -13,7 +13,7 @@
 <p class="lang"><a href="#ja">日本語</a><a href="#en">English</a></p>
 
 <section id="ja" lang="ja">
-<p class="sub">制定日: 2026年10月24日</p>
+<p class="sub">制定日: 2026年10月24日　改定日: 2026年10月26日</p>
 <p>tmbrtext2（以下「本アプリ」）は、個人が開発・運営する Tumblr の閲覧アプリです。本アプリは Tumblr 公式のアプリではありません。このページでは、本アプリが扱う情報と、その扱い方を説明します。</p>
 
 <h2>1. 開発者が集める情報はありません</h2>
@@ -22,8 +22,8 @@
 <h2>2. 本アプリが端末の中で扱う情報</h2>
 <ul>
 <li><strong>Tumblr のログイン情報</strong>: Tumblr の認可画面でログインし、本アプリは Tumblr が発行する鍵（アクセストークン）だけを受け取ります。パスワードを本アプリが見ることはありません。鍵は端末の安全な保管領域（iPhone のキーチェーン、Android のキーストア）に保存します。</li>
-<li><strong>Tumblr から取得した内容</strong>: ダッシュボードやライクしたポスト、自分のブログの一覧などを表示のために取得します。読み込んだポストと画像は端末に一時的に保存し、取得から24時間で削除します。</li>
-<li><strong>ピン</strong>: ピンしたポストは端末の中だけに保存します。ポストの内容は24時間を過ぎると表示に使わず、開いたときに Tumblr から取り直します。</li>
+<li><strong>Tumblr から取得した内容</strong>: ダッシュボードやライクしたポスト、自分のブログの一覧などを表示のために取得します。読み込んだポストと画像は端末に一時的に保存します。取得から24時間を過ぎたものは表示に使わず、アプリを開いているとき、または次にアプリを開いたときに端末から削除します。</li>
+<li><strong>ピン</strong>: ピンしたポストは端末の中だけに保存します。ポストの内容は取得から24時間を過ぎると表示に使わず、端末からも削除し、開いたときに Tumblr から取り直します。</li>
 <li><strong>設定</strong>: 表示の設定、NGワード、本アプリでブロックしたブログの一覧、表示済みのポストの記録（新着の件数を数えるため）を端末に保存します。</li>
 <li><strong>写真</strong>: 画像を保存する操作をしたときだけ、写真への「追加」の許可を求めます。端末の写真を読み取ることはありません。</li>
 <li><strong>通信の種類</strong>: モバイル通信かどうかを、画像の先読みをするかの判断にだけ使います。記録や送信はしません。</li>
@@ -55,7 +55,7 @@
 
 <section id="en" lang="en">
 <h1 style="margin-top:56px">Privacy Policy</h1>
-<p class="sub">Effective date: October 24, 2026</p>
+<p class="sub">Effective date: October 24, 2026 / Last updated: October 26, 2026</p>
 <p>tmbrtext2 (“the app”) is a Tumblr reader developed and run by an individual. It is not an official Tumblr app. This page explains what information the app handles and how.</p>
 
 <h2>1. The developer collects no information</h2>
@@ -64,8 +64,8 @@
 <h2>2. Information the app keeps on your device</h2>
 <ul>
 <li><strong>Tumblr login</strong>: You log in on Tumblr’s authorization page, and the app receives only an access token issued by Tumblr. The app never sees your password. Tokens are stored in your device’s secure storage (Keychain on iPhone, Keystore on Android).</li>
-<li><strong>Content from Tumblr</strong>: The app fetches your dashboard, your likes and your list of blogs to show them. Loaded posts and images are cached on your device and deleted 24 hours after they are fetched.</li>
-<li><strong>Pins</strong>: Pinned posts are stored only on your device. After 24 hours their content is no longer used and is fetched again from Tumblr when you open them.</li>
+<li><strong>Content from Tumblr</strong>: The app fetches your dashboard, your likes and your list of blogs to show them. Loaded posts and images are cached on your device temporarily. Once 24 hours have passed since they were fetched, they are no longer shown and are deleted from your device while the app is open, or the next time you open the app.</li>
+<li><strong>Pins</strong>: Pinned posts are stored only on your device. Once 24 hours have passed since a post was fetched, its content is no longer shown, is deleted from your device, and is fetched again from Tumblr when you open your pins.</li>
 <li><strong>Settings</strong>: Display settings, muted words, blogs you blocked in the app, and a record of posts you have seen (to count new posts) are stored on your device.</li>
 <li><strong>Photos</strong>: The app asks for “add only” access to Photos only when you save an image. It never reads your photos.</li>
 <li><strong>Connection type</strong>: Whether you are on mobile data is used only to decide whether to prefetch images. It is not recorded or sent.</li>
